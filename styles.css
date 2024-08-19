@@ -1,27 +1,41 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #e0f7fa;
+    color: #333;
 }
 
 .container {
     width: 80%;
-    margin: 0 auto;
-    background-color: #fff;
+    max-width: 900px;
+    margin: 20px auto;
+    background-color: #ffffff;
     padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     animation: fadeIn 1s ease-out;
 }
 
 h1, h2 {
-    color: #333;
-    animation: slideIn 1s ease-out;
+    color: #00796b;
+    transition: color 0.3s ease;
 }
 
 h1 {
-    border-bottom: 2px solid #333;
+    border-bottom: 3px solid #00796b;
     padding-bottom: 10px;
+    font-size: 2.5em;
+    text-align: center;
+    animation: slideIn 1s ease-out;
+}
+
+h2 {
+    font-size: 1.8em;
+    border-bottom: 2px solid #004d40;
+    padding-bottom: 5px;
+    margin-top: 20px;
+    margin-bottom: 10px;
 }
 
 section {
@@ -31,13 +45,15 @@ section {
 
 .date {
     font-weight: bold;
-    color: #555;
-    animation: fadeIn 1.5s ease-out;
+    color: #004d40;
+    text-align: center;
+    font-size: 1.2em;
+    margin-bottom: 20px;
 }
 
 .section-title {
     font-weight: bold;
-    color: #444;
+    color: #00796b;
     margin-top: 10px;
     margin-bottom: 5px;
 }
@@ -48,7 +64,28 @@ ul {
 }
 
 li {
-    margin-bottom: 5px;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-left: 4px solid #00796b;
+    background-color: #f1f8e9;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+li:hover {
+    background-color: #c8e6c9;
+    transform: scale(1.02);
+}
+
+a {
+    color: #00796b;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #004d40;
+    text-decoration: underline;
 }
 
 /* Animations */
